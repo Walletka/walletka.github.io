@@ -16,34 +16,68 @@ main {
   height: 100%;
 }
 
-.header {
+.step {
   scroll-snap-align: start;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  height: 100vh;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+}
+
+.header h1 {
+  font-size: 6.5rem;
+}
+
+.header img {
+  width: 250px;
 }
 
 .section-one {
-  scroll-snap-align: start;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .section-one .section-one-item {
   display: flex;
+  margin: 20px;
 }
 
-.section-one .reversed {
+.section-one img {
+  width: 100px;
+  margin: 0 20px;
+}
+
+.section-one p {
+  max-width: 700px;
+}
+
+.section-one *:nth-child(even) {
   flex-direction: row-reverse;
 }
 
+.section-footer {
+  min-height: 100vh;
+  align-items: center;
+}
+
 .section-two {
-  scroll-snap-align: start;
-  min-height: 40vh;
-  display: flex;
-  justify-content: center;
+  height: 100vh;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+.section-two div:last-child {
+  background: white;
+  color: black;
+}
+
+.section-two .item {
+  height: 100%;
+  width: 100%;
 }
