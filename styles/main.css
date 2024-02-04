@@ -98,6 +98,44 @@ main {
 .section-two .item {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-two ul {
+  list-style-type: none;
+}
+
+.section-two ul li {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.email {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  max-width: 70%;
+}
+
+.email a {
+  text-decoration: none;
+  color: #000;
+  font-size: 4rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .section-two {
+    flex-direction: column;
+  }
+  
+  .email a {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -114,5 +152,13 @@ main {
 
   .section-title {
     font-size: 2.5rem;
+  }
+
+  .section-two {
+    flex-direction: column;
+  }
+
+  .email a {
+    font-size: 1.5rem;
   }
 }
