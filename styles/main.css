@@ -44,19 +44,6 @@ main {
   padding: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-  .header h1 {
-    font-size: 5rem;
-  }
-
-  .header {
-    min-height: 100vh;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 .header img {
   width: 250px;
 }
@@ -111,4 +98,21 @@ main {
 .section-two .item {
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .header h1 {
+    font-size: 5rem;
+  }
+
+  .header {
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
 }
