@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-y: hidden;
+  background: black;
+  color: white;
+  margin: 0;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.header {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-one {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-one .section-one-item {
+  display: flex;
+}
+
+.section-one .reversed {
+  flex-direction: row-reverse;
+}
+
+.section-two {
+  scroll-snap-align: start;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+}
