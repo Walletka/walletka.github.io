@@ -34,6 +34,19 @@ main {
   font-size: 6.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .header h1 {
+    font-size: 6.5rem;
+  }
+
+  .header {
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .header img {
   width: 250px;
 }
