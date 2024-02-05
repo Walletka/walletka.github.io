@@ -112,13 +112,19 @@ main {
 .external-link {
   border: solid 1px lightgrey;
   border-radius: 15px;
-  padding: 10px;
+  padding: 25px;
   text-decoration: none;
   color: chartreuse;
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   display: flex;
   align-items: center;
-  margin: 0 10px;
+  margin: 10px;
+}
+
+.external-link:hover {
+  border: 1px solid chartreuse;
+  scale: 1.05;
+  transition: 0.3 ease-in-out linear;
 }
 
 .external-link img {
@@ -128,28 +134,30 @@ main {
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.button-container a:last-child {
+  margin-bottom: 0px;
+}
+
 .section-two {
-  height: 100vh;
-  flex-grow: 1;
-  flex-direction: row;
-}
-
-.section-two div:last-child {
-  background: white;
-  color: black;
-}
-
-.section-two .item {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
+
+.section-two h2 {
+  color: #ff9100;
+}
+
+.section-two h6 {
+  margin: 15px;
+  font-size: 0.9rem;
+}
+
 
 .section-two ul {
   list-style-type: none;
@@ -162,6 +170,7 @@ main {
 }
 
 .email {
+  border-radius: 10px;
   padding: 10px;
   text-decoration: none;
   color: #000;
@@ -175,6 +184,11 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+
+  .section-one-item {
+    max-width: 100%;
+  }
+
   .section-two {
     flex-direction: column;
   }
@@ -182,6 +196,11 @@ main {
   .email a {
     font-size: 3rem;
   }
+
+  .external-link {
+    font-size: 1.4rem;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -207,4 +226,55 @@ main {
   .email a {
     font-size: 1.5rem;
   }
+
+  .section-one-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-one>*:nth-child(even) {
+    flex-direction: column;
+  }
+
+}
+
+.section-two-benefits-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.section-two-benefits {
+  width: 300px;
+  border: .5px solid lightslategrey;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+.section-two-benefits p {
+  color: black;
+  text-align: center;
+}
+
+.section-two-benefits h4 {
+  color: black;
+  font-size: 1.3rem;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+.section-two-benefits img {
+  width: 30%;
+}
+
+.section-two-benefits hr {
+  width: 90%;
+  border: 1px solid lightslategray;
+  margin: 20px 0 0 0;
 }
