@@ -123,7 +123,7 @@ main {
 
 
 .section-footer {
-  min-height: 100vh;
+  padding: 50px 0;
   align-items: center;
 }
 
@@ -262,18 +262,29 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 60px;
+  background: rgb(212, 211, 211);
+  background: linear-gradient(90deg, rgba(212, 211, 211, 1) 0%, rgba(255, 255, 255, 1) 53%);
   padding: 40px;
+  border-radius: 30px;
 }
 
 .section-two-benefits {
   width: 300px;
   border: .5px solid lightslategrey;
+  border-radius: 5px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
   margin: 15px;
+  box-shadow: 0px 1px 28px 5px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease-in-out;
+}
+
+.section-two-benefits:hover {
+  box-shadow: 0px 1px 28px 5px rgba(0, 0, 0, 0.7);
 }
 
 .section-two-benefits p {
@@ -294,6 +305,6 @@ main {
 
 .section-two-benefits hr {
   width: 90%;
-  border: 1px solid lightslategray;
+  border: 1px solid #778899;
   margin: 20px 0 0 0;
 }
